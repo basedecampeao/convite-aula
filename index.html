@@ -628,16 +628,16 @@
   .hp { position: absolute; left: -9999px; }
 
   /* sucesso */
-  .success { display: none; text-align: center; }
-  .success .ok { width: 70px; height: 70px; border-radius: 50%; margin: 6px auto 18px; background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%); color: var(--navy-main); display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 10px rgba(219,167,65,0.14); }
-  .success .ok i, .success .ok svg { width: 34px; height: 34px; }
-  .success h2 { font-size: 1.9rem; color: #FFF; margin-bottom: 10px; }
-  .success p { color: var(--text-muted); font-size: 0.98rem; margin-bottom: 20px; }
-  .success .sbtns { display: grid; gap: 12px; }
-  .success .sbtns .btn { width: 100%; justify-content: center; }
-  .success .sfoot { font-size: 0.82rem; color: var(--text-muted); margin-top: 16px; }
+  .bdc-done { display: none; text-align: center; background: none; border: 0; box-shadow: none; }
+  .bdc-done .bdc-check { width: 70px; height: 70px; border-radius: 50%; margin: 6px auto 18px; background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%); color: var(--navy-main); display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 10px rgba(219,167,65,0.14); }
+  .bdc-done .bdc-check i, .bdc-done .bdc-check svg { width: 34px; height: 34px; }
+  .bdc-done h2 { font-size: 1.9rem; color: #FFF; margin-bottom: 10px; }
+  .bdc-done p { color: var(--text-muted); font-size: 0.98rem; margin-bottom: 20px; }
+  .bdc-done .bdc-sbtns { display: grid; gap: 12px; }
+  .bdc-done .bdc-sbtns .btn { width: 100%; justify-content: center; }
+  .bdc-done .bdc-sfoot { font-size: 0.82rem; color: var(--text-muted); margin-top: 16px; }
   .form-card.done .form-body { display: none; }
-  .form-card.done .success { display: block; }
+  .form-card.done .bdc-done { display: block; }
 
   /* o que você vai ver */
   .learn { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
@@ -739,12 +739,12 @@
         </form>
       </div>
 
-      <div class="success" id="success" aria-live="polite">
-        <div class="ok"><i data-lucide="check"></i></div>
+      <div class="bdc-done" id="bdc-done" aria-live="polite">
+        <div class="bdc-check"><i data-lucide="check"></i></div>
         <h2 id="s-title">Tudo certo!</h2>
         <p id="s-text"></p>
-        <div class="sbtns" id="s-btns"></div>
-        <p class="sfoot" id="s-foot"></p>
+        <div class="bdc-sbtns" id="s-btns"></div>
+        <p class="bdc-sfoot" id="s-foot"></p>
       </div>
     </div>
   </div>
